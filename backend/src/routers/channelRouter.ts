@@ -8,6 +8,6 @@ channelRouter.post("/create", ChannelService.create);
 // 채널 가입
 channelRouter.post("/join", ChannelService.join);
 // 가입한 채널목록 불러오기
-channelRouter.get("/find", ChannelService.find);
+channelRouter.get("/:email", ChannelService.find);
 
 export default channelRouter;

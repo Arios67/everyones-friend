@@ -3,20 +3,12 @@ get:
   tags:
     - channel
   parameters:
-    - in: headers
-      name: user email
+    - in: path
+      name: email
       required: true
       description: 유저 이메일
       schema:
-        type: object
-        example:
-          email: string!
-
-  requestBody:
-    content:
-      application/json:
-        schema:
-          type: object
+        type: string
 
   responses:
     "200":

@@ -12,7 +12,7 @@
   $ref: "./channel/channel.create.yaml"
 /channel/join:
   $ref: "./channel/channel.join.yaml"
-/channel/find:
+/channel/{email}:
   $ref: "./channel/channel.find.yaml"
 
 /login:

@@ -2,23 +2,17 @@ post:
   summary: 회원 가입(생성)
   tags:
     - user
-  parameters:
-    - in: body
-      name: user
-      required: true
-      description: 생성할 유저 정보
-      schema:
-        type: object
-        example:
-          email: string!
-          password: string!
-          nickname: string!
 
   requestBody:
+    description: 생성할 유저 정보
     content:
       application/json:
         schema:
           type: object
+          example:
+            email: string!
+            password: string!
+            nickname: string!
 
   responses:
     "200":

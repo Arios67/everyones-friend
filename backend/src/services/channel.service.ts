@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { Request, RequestParamHandler, Response } from "express";
 import { Channel } from "../entities/channel.entity";
 import { getRepository } from "typeorm";
 import { ChannelJoin } from "../entities/channeljoin.entity";
@@ -39,10 +39,13 @@ export class ChannelService {
   static find = async (req: Request, res: Response) => {
     try {
       const joinRepository = getRepository(ChannelJoin);
-      const result = await joinRepository.find(req.body.email);
+      const email = req.params.email;
+      const result = await joinRepository.find({ email });
       res.send(result.map((e) => e["channel"]));
     } catch (err) {
       res.send(err);
+    } finally {
+      return;
     }
   };
 
