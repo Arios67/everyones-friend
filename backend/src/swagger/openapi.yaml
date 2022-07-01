@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 오늘의 친구 API docs
-  description: today's friends api-docs
+  title: 모두의 친구 API docs
+  description: everyone's friends api-docs
   license:
     name: MIT
 paths:

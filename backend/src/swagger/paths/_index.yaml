@@ -1,5 +1,4 @@
 # paths 파일 안의 각 api명세파일들 --> _index.yaml --> openapi.yaml --> build.yaml 순으로 합쳐지고 실행되는 구조.
-# _index.yaml은 Router 혹은 resolver와 비슷한 역할
 
 /user/create: # API endpoint
   $ref: "./user/user.create.yaml" # api 명세 파일
@@ -14,6 +13,8 @@
   $ref: "./channel/channel.join.yaml"
 /channel/{email}:
   $ref: "./channel/channel.find.yaml"
+/channel/findAll:
+  $ref: "./channel/channel.findAll.yaml"
 
 /login:
   $ref: "./auth/login.yaml"

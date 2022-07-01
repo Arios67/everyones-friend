@@ -28,15 +28,4 @@ export class AuthService {
     // localStorage.setItem("AT", JSON.stringify(accessToken));
     res.send(true);
   };
-
-  // static logout = async () => {
-  //   localStorage.clear();
-  // };
-
-  // static validate = async (req, payload: any) => {
-  //   const AT = localStorage.getItem("AT");
-  //   const result = jwt.verify(JSON.parse(AT), process.env.ACCESS_TOKEN_KEY);
-
-  //   console.log(result);
-  // };
 }

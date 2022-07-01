@@ -2,21 +2,15 @@ post:
   summary: 로그인
   tags:
     - auth
-  parameters:
-    - in: body
-      name: account
-      required: true
-      description: 로그인 정보
-      schema:
-        type: object
-        example:
-          email: string!
-          password: string!
+
   requestBody:
     content:
       application/json:
         schema:
           type: object
+          example:
+            email: string!
+            password: string!
 
   responses:
     "200":
@@ -26,3 +20,7 @@ post:
           schema:
             type: boolean
             example: true
+    "401":
+      description: "이메일 오류"
+    "422":
+      description: "비밀번호 오류"

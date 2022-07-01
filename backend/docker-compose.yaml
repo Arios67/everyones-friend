@@ -3,7 +3,7 @@ version: "3.3"
 services:
   my_backend:
     platform: linux/amd64
-    image: asia.gcr.io/resolute-world-344710/my_backend:1.9
+    image: asia.gcr.io/resolute-world-344710/my_backend:2.4
     build:
       context: .
       dockerfile: Dockerfile

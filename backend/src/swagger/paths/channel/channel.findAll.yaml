@@ -1,0 +1,19 @@
+get:
+  summary: 모든 채널 조회
+  tags:
+    - channel
+
+  responses:
+    "200":
+      description: A JSON array of joined channel
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: object
+              example:
+                id: 채널 id
+                title: 채널 이름
+                intro: 채널 소개
+                description: 채널 상세설명

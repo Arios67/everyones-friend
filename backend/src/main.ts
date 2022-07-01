@@ -58,16 +58,16 @@ io.on("connection", (client: Socket) => {
 
   client.on(
     "getMessage",
-    async (msg: string, roomId: string): Promise<void> => {
-      const d = new Date();
-      client.to(roomId).emit("sendMessage", {
-        nickname: client.data.nickname,
+    async (msg: string, nickname: string): Promise<void> => {
+      const date = new Date();
+      client.to(client.data.roomId).emit("sendMessage", {
+        nickname,
         message: msg,
-        date: d,
+        date,
       });
       const chat = new Chat({
-        nickname: client.data.nickname,
-        date: d,
+        nickname,
+        date,
         content: msg,
         channel: client.data.roomId,
       });

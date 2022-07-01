@@ -49,6 +49,17 @@ export class ChannelService {
     }
   };
 
+  static findAll = async (res: Response) => {
+    try {
+      const channelRepository = getRepository(Channel);
+      const result = await channelRepository.find();
+      res.send(result);
+    } catch (err) {
+      res.send(err);
+    } finally {
+      return;
+    }
+  };
   // static delete = async(req: Request, res: Response) => {
   //   try {
   //     const joinRepository = getRepository(ChannelJoin);
