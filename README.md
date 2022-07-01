@@ -29,8 +29,7 @@ Everyone's friend는 kubernetes를 활용한 배포 및 expressJS 환경에서�
 ## api-docs(swagger-ui)의 모듈식 구성
 가독성 및 차후 수정의 용이성을 위해 각 api에 대한 docs파일(.yaml)을 모듈화 하였습니다.<br><br>
 ![s](https://user-images.githubusercontent.com/81277145/176852569-8b14f49d-9d3b-4f4c-866e-98432e558a3b.png) &nbsp;
-![ss](https://user-images.githubusercontent.com/81277145/176853147-f8a34222-bdaf-4a53-b693-e839f2d203b2.png) &nbsp;
-![sss](https://user-images.githubusercontent.com/81277145/176853626-4c291fc7-61ba-4db9-8bae-dea9fc977a28.png) <br>
+![ss](https://user-images.githubusercontent.com/81277145/176853147-f8a34222-bdaf-4a53-b693-e839f2d203b2.png) <br>
 paths 폴더 안의 yaml 파일들은 스크립트를 통해 openapi.yaml파일의 paths 경로에 합쳐져 build.yaml을 생성하며 이를 통해 api-docs 페이지를 구현합니다. <br>
 (! src > swagger 폴더 참조)
 <br><br>
