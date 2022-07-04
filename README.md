@@ -37,8 +37,8 @@ paths 폴더 안의 yaml 파일들은 스크립트를 통해 openapi.yaml파일�
 
 ![EF_K](https://user-images.githubusercontent.com/81277145/177138112-337b15fc-4bfe-4c1c-8ca1-eb0c14d50d44.png) <br><br>
 * backend server pod를 포함하고있는 deployment의 HorizontalPodAutoscaler을 통해 서버의 오토스케일링 기능을 구현하였으며, 이를 통해 롤링 배포 할 수 있습니다. <br>
-* backend service는 LoadBalancer를 통해 생성된 외부 IP 3000포트와 nodePort로 포트 포워딩하여 노출시켰으며, 
-ingress를 통해 경로 생성 시 서브 도메인 기반의 라우팅과 SSL 보안 인증을 지원합니다.<br>
+* backend service는 LoadBalancer를 통해 생성된 외부 IP 3000포트와 nodePort로 포트 포워딩하여 노출시켰으며
+ingress를 통해 SSL 인증과, 경로 생성 시 서브 도메인 기반의 라우팅을 지원합니다.<br>
 
 ![get Svc](https://user-images.githubusercontent.com/81277145/177145829-87c0e7bc-041f-422a-9344-8cf6d5d92417.png) <br>
 
