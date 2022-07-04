@@ -1,6 +1,6 @@
 # Everyone's friend 개요<br>
 Everyone's friend는 kubernetes를 활용한 배포 및 expressJS 환경에서의 개발 경험을 위해 만들어진 개인 프로젝트입니다.
-누구나 쉽게 접속해 채팅 채널을 만들고, 채팅할 수 있는 공간이라는 컨셉을 가지고 있습니다.
+누구나 쉽게 접속해 채팅 채널을 만들고, 대화할 수 있는 공간이라는 컨셉을 가지고 있습니다.
 <br><br>
 ## 사용 기술스택
   &nbsp;<img src="https://img.shields.io/badge/JavaScript-FFF064?style=for-the-badge&logo=JavaScript&logoColor=black">
