@@ -32,7 +32,7 @@ Everyone's friend는 kubernetes를 활용한 배포 및 expressJS 환경에서�
 ![ss](https://user-images.githubusercontent.com/81277145/176853147-f8a34222-bdaf-4a53-b693-e839f2d203b2.png) <br>
 paths 폴더 안의 yaml 파일들은 스크립트를 통해 openapi.yaml파일의 paths 경로에 합쳐져<br> build.yaml을 생성하며 이를 통해 api-docs 페이지를 구현합니다.<br>
 <br> api-docs : https://arios.shop/api-docs <br><br>
-## kubernetes를 활용한 무중단 배포
+## kubernetes(GKE Autopilot)를 활용한 무중단 배포
 * 다음은 GCP와 k8s를 활용한 서버 배포 구조입니다.
 
 ![EF_K](https://user-images.githubusercontent.com/81277145/177138112-337b15fc-4bfe-4c1c-8ca1-eb0c14d50d44.png) <br><br>
