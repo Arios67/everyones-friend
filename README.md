@@ -34,3 +34,5 @@ paths 폴더 안의 yaml 파일들은 스크립트를 통해 openapi.yaml파일�
 <br> api-docs : https://arios.shop/api-docs <br><br>
 ## kubernetes를 활용한 무중단 배포
 * 다음은 GCP와 k8s를 활용한 서버 배포 구조입니다.
+
+![EF_K](https://user-images.githubusercontent.com/81277145/177115131-fb1908e1-3b5d-42f5-86e2-a872604b767b.png)
